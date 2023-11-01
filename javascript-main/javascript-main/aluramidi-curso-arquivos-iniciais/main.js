@@ -21,5 +21,9 @@ for (contador = 0; contador <lista.length){
 tecla[contador].onclick = function(){
      tocasom(idAudio);
     };
+    tecla.onekeydown = function(evento){
+        if(evento.code === 'space' || evento.code === 'enter'){
+            tecla.classList.add('ativa');}
+    }
 }
 
